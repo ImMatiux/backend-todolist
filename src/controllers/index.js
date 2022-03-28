@@ -70,10 +70,10 @@ module.exports = {
   changeStatus: async (req, res) => {
     try {
       const { id } = req.params;
-      const { status } = req.body;
+      const { isComplete } = req.body;
       const updateTodo = await Todo.update(
         {
-          status,
+          isComplete,
         },
         {
           where: {

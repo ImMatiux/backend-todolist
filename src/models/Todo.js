@@ -15,7 +15,7 @@ const Todo = sequelize.define("todos", {
     type: DataTypes.TEXT,
     allowNull: false,
   },
-  status: {
+  isComplete: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
     defaultValue: false,
